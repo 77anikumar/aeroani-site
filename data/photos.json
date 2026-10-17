@@ -1,81 +1,169 @@
 {
-  "selfHosted": false,
+  "selfHosted": true,
   "cdnPrefix": "https://images.squarespace-cdn.com/content/v1/6709d39be5d31024ea0b359a/",
-  "hero": { "location": "saint-barthelemy", "photo": 1 },
+  "hero": {
+    "location": "saint-barthelemy",
+    "photo": 1
+  },
   "featured": [
-    { "location": "fleet-week", "photo": 1 },
-    { "location": "san-francisco", "photo": 2 },
-    { "location": "moffett", "photo": 0 },
-    { "location": "sint-maarten", "photo": 0 },
-    { "location": "seattle", "photo": 1 },
-    { "location": "osaka", "photo": 1 }
+    {
+      "location": "fleet-week",
+      "photo": 1
+    },
+    {
+      "location": "san-francisco",
+      "photo": 2
+    },
+    {
+      "location": "moffett",
+      "photo": 0
+    },
+    {
+      "location": "sint-maarten",
+      "photo": 0
+    },
+    {
+      "location": "seattle",
+      "photo": 1
+    },
+    {
+      "location": "osaka",
+      "photo": 1
+    }
   ],
   "locations": [
     {
       "slug": "san-francisco",
       "name": "San Francisco",
       "region": "California",
-      "photos": ["8cc62078-c075-4f5b-96e7-91099a213ef3/DSC_0940.jpg","01426108-5ddb-4301-9078-396ce22a9a0a/DSC_0069.jpg","8d35d52d-7b78-4631-8376-78d009a87792/DSC_0335.jpg","bf885f5e-4fac-432e-8743-7048b53a7a30/DSC_0447.jpg","c0136e4d-e752-449b-861d-317d1e428015/DSC_0581.jpg","9c365337-db72-445a-baff-4d9771c97a4a/DSC_0445.jpg","f7045c0c-01bf-480c-9971-115cc8e37a82/DSC_0028.jpg","4389530c-42cd-4c9a-8a04-3ce513d98c08/DSC_0287.jpg","2dab8cec-a3c2-47d1-9b01-2b737f6d5e1b/DSC_0033.jpg","516e2252-4183-469a-a672-848aad222dba/DSC_0061.jpg","78058c68-a61d-4f87-85ba-d7a80d441681/DSC_0030.jpg","f273b5b4-7566-407e-b1f1-a9d59bf1415f/DSC_0039.jpg","a04ebb70-f768-4f7b-96ac-5f1aee38eef6/DSC_0396.jpg","f42749a6-3607-4b01-bb2b-1bb12e60cd6a/DSC_0090.jpg","f05de517-e32a-489b-b625-f573c89c8736/DSC_0692.jpg","f3c50cdf-9355-4821-b619-0e67149a8854/DSC_0019.jpg","45fae4c9-7ffc-41cb-a9e9-91f8cdcd17b9/DSC_0294.jpg"]
+      "photos": [
+        "8cc62078-c075-4f5b-96e7-91099a213ef3/DSC_0940.jpg",
+        "01426108-5ddb-4301-9078-396ce22a9a0a/DSC_0069.jpg",
+        "8d35d52d-7b78-4631-8376-78d009a87792/DSC_0335.jpg",
+        "bf885f5e-4fac-432e-8743-7048b53a7a30/DSC_0447.jpg",
+        "c0136e4d-e752-449b-861d-317d1e428015/DSC_0581.jpg",
+        "9c365337-db72-445a-baff-4d9771c97a4a/DSC_0445.jpg",
+        "f7045c0c-01bf-480c-9971-115cc8e37a82/DSC_0028.jpg",
+        "4389530c-42cd-4c9a-8a04-3ce513d98c08/DSC_0287.jpg",
+        "2dab8cec-a3c2-47d1-9b01-2b737f6d5e1b/DSC_0033.jpg",
+        "516e2252-4183-469a-a672-848aad222dba/DSC_0061.jpg",
+        "78058c68-a61d-4f87-85ba-d7a80d441681/DSC_0030.jpg",
+        "f273b5b4-7566-407e-b1f1-a9d59bf1415f/DSC_0039.jpg",
+        "a04ebb70-f768-4f7b-96ac-5f1aee38eef6/DSC_0396.jpg",
+        "f42749a6-3607-4b01-bb2b-1bb12e60cd6a/DSC_0090.jpg",
+        "f05de517-e32a-489b-b625-f573c89c8736/DSC_0692.jpg",
+        "f3c50cdf-9355-4821-b619-0e67149a8854/DSC_0019.jpg",
+        "45fae4c9-7ffc-41cb-a9e9-91f8cdcd17b9/DSC_0294.jpg"
+      ]
     },
     {
       "slug": "san-jose",
       "name": "San Jose",
       "region": "California",
-      "photos": ["aca7a825-b9e1-4da1-a574-6861406ec32c/DSC_0106.jpg","7ef64149-dd0b-4eef-879f-fb4662e32802/DSC_0009.jpg","31d161b4-46ac-4824-8236-754b2baef52d/DSC_0008.jpg","eb1f57a3-08c3-4b42-a71c-f1ba3b9e7ed9/DSC_0097.jpg","76a87a5e-6962-43c5-9b38-b188164e0fc8/DSC_0290.jpg","c335a9c8-5e96-4e6f-a38c-7d87b9fbf323/DSC_0102.jpg","475ae283-618e-4dc5-8105-87f04d42e1d8/DSC_0004.jpg","8b4992a7-66e6-41e6-8e1f-fc7ea9b9ca91/DSC_0007.jpg","f2417b57-e598-48be-8834-2f4ca0b5e55a/DSC_0010.jpg","cc08fec9-7e83-48b6-9f86-587f4f8dfe44/DSC_0084.jpg","ec3e07a9-7062-41df-93d1-808de67b23fd/DSC_0002.jpg","3d4c17d5-fa45-4cf3-bba4-f62068d93e3d/DSC_0324.jpg"]
+      "photos": [
+        "aca7a825-b9e1-4da1-a574-6861406ec32c/DSC_0106.jpg",
+        "7ef64149-dd0b-4eef-879f-fb4662e32802/DSC_0009.jpg",
+        "31d161b4-46ac-4824-8236-754b2baef52d/DSC_0008.jpg",
+        "eb1f57a3-08c3-4b42-a71c-f1ba3b9e7ed9/DSC_0097.jpg",
+        "76a87a5e-6962-43c5-9b38-b188164e0fc8/DSC_0290.jpg",
+        "c335a9c8-5e96-4e6f-a38c-7d87b9fbf323/DSC_0102.jpg",
+        "475ae283-618e-4dc5-8105-87f04d42e1d8/DSC_0004.jpg",
+        "8b4992a7-66e6-41e6-8e1f-fc7ea9b9ca91/DSC_0007.jpg",
+        "f2417b57-e598-48be-8834-2f4ca0b5e55a/DSC_0010.jpg",
+        "cc08fec9-7e83-48b6-9f86-587f4f8dfe44/DSC_0084.jpg",
+        "ec3e07a9-7062-41df-93d1-808de67b23fd/DSC_0002.jpg",
+        "3d4c17d5-fa45-4cf3-bba4-f62068d93e3d/DSC_0324.jpg"
+      ]
     },
     {
       "slug": "fleet-week",
       "name": "Fleet Week",
       "region": "San Francisco Bay",
-      "photos": ["65c78ea7-4460-4814-a56d-910f918b017a/DSC_0162.jpg","eaa7867e-3c0c-4b61-b0ad-0314182c91fb/DSC_0137.jpg","b5915ca5-2069-44fd-82bb-c0229c19b8bc/DSC_0023.jpg","61a67a33-7770-4e12-8c42-a99cc71fbdde/DSC_0235.jpg","0035e82c-a42a-464f-a0f7-e81e5b56554b/DSC_0231.jpg","9295b557-a0cc-4229-9ccc-a0673a6fcf9e/DSC_1110.jpg"]
+      "photos": [
+        "65c78ea7-4460-4814-a56d-910f918b017a/DSC_0162.jpg",
+        "eaa7867e-3c0c-4b61-b0ad-0314182c91fb/DSC_0137.jpg",
+        "b5915ca5-2069-44fd-82bb-c0229c19b8bc/DSC_0023.jpg",
+        "61a67a33-7770-4e12-8c42-a99cc71fbdde/DSC_0235.jpg",
+        "0035e82c-a42a-464f-a0f7-e81e5b56554b/DSC_0231.jpg",
+        "9295b557-a0cc-4229-9ccc-a0673a6fcf9e/DSC_1110.jpg"
+      ]
     },
     {
       "slug": "los-angeles",
       "name": "Los Angeles",
       "region": "California",
-      "photos": ["373e27e2-8847-454d-a3c5-a0a0a480b843/DSC_0132.jpg","b6170261-948c-48e4-b37e-6afd021f4ae2/DSC_0184.jpg"]
+      "photos": [
+        "373e27e2-8847-454d-a3c5-a0a0a480b843/DSC_0132.jpg",
+        "b6170261-948c-48e4-b37e-6afd021f4ae2/DSC_0184.jpg"
+      ]
     },
     {
       "slug": "sint-maarten",
       "name": "Sint Maarten",
       "region": "Caribbean",
-      "photos": ["dfbdbc67-9e51-464c-98d8-794c0e4a0d26/DSC_0356.jpg"]
+      "photos": [
+        "dfbdbc67-9e51-464c-98d8-794c0e4a0d26/DSC_0356.jpg"
+      ]
     },
     {
       "slug": "saint-barthelemy",
       "name": "Saint Barthélemy",
       "region": "Caribbean",
-      "photos": ["6d457512-0674-42a6-b857-f7fcbc61732c/DSC_0264.jpg","5a37a162-72a4-45a2-809b-60ba216b29b0/DSC_0267.jpg"]
+      "photos": [
+        "6d457512-0674-42a6-b857-f7fcbc61732c/DSC_0264.jpg",
+        "5a37a162-72a4-45a2-809b-60ba216b29b0/DSC_0267.jpg"
+      ]
     },
     {
       "slug": "moffett",
       "name": "Moffett",
       "region": "California",
-      "photos": ["0a3a6f40-6eba-4fed-b473-73b568474edb/DSC_0033.jpg","5fdbebaf-0002-4180-a1f4-fb511aaf2bae/DSC_0038.jpg","59821747-d88b-48e7-a682-e8de74206014/DSC_0027.jpg","4e64fc2e-07e9-4c04-bdd2-5f7024cbb812/DSC_0036.jpg","f4778965-b1bd-45bf-baa8-4a3ba573d9b4/DSC_0043.jpg"]
+      "photos": [
+        "0a3a6f40-6eba-4fed-b473-73b568474edb/DSC_0033.jpg",
+        "5fdbebaf-0002-4180-a1f4-fb511aaf2bae/DSC_0038.jpg",
+        "59821747-d88b-48e7-a682-e8de74206014/DSC_0027.jpg",
+        "4e64fc2e-07e9-4c04-bdd2-5f7024cbb812/DSC_0036.jpg",
+        "f4778965-b1bd-45bf-baa8-4a3ba573d9b4/DSC_0043.jpg"
+      ]
     },
     {
       "slug": "palo-alto",
       "name": "Palo Alto",
       "region": "California",
-      "photos": ["fe5c88fc-9ddb-4e01-bd3d-efb1624daf16/DSC_0355.jpg","f58c0555-5b73-4caf-8ab8-d00c412d634f/DSC_0125.jpg","e1c9e25c-dc82-4eb2-94e4-23e81fe69f06/DSC_0350.jpg","63058cec-68e0-4df1-91d1-4ba7735015fc/DSC_0362.jpg"]
+      "photos": [
+        "fe5c88fc-9ddb-4e01-bd3d-efb1624daf16/DSC_0355.jpg",
+        "f58c0555-5b73-4caf-8ab8-d00c412d634f/DSC_0125.jpg",
+        "e1c9e25c-dc82-4eb2-94e4-23e81fe69f06/DSC_0350.jpg",
+        "63058cec-68e0-4df1-91d1-4ba7735015fc/DSC_0362.jpg"
+      ]
     },
     {
       "slug": "bozeman",
       "name": "Bozeman",
       "region": "Montana",
-      "photos": ["94b08992-ba00-4c9d-a35b-920686759993/DSC_0246.jpg","2b52f4e7-1107-4c1d-b369-f587900171f6/DSC_0168.jpg"]
+      "photos": [
+        "94b08992-ba00-4c9d-a35b-920686759993/DSC_0246.jpg",
+        "2b52f4e7-1107-4c1d-b369-f587900171f6/DSC_0168.jpg"
+      ]
     },
     {
       "slug": "seattle",
       "name": "Seattle",
       "region": "Washington",
-      "photos": ["6b2ea35a-e8fc-4979-aca0-84ba2bea7075/DSC_0035.jpg","d2ff6645-fa6d-4755-8e60-01447774d389/DSC_0022.jpg","dcbc4c63-6919-411b-a601-238195148583/DSC_0046.jpg"]
+      "photos": [
+        "6b2ea35a-e8fc-4979-aca0-84ba2bea7075/DSC_0035.jpg",
+        "d2ff6645-fa6d-4755-8e60-01447774d389/DSC_0022.jpg",
+        "dcbc4c63-6919-411b-a601-238195148583/DSC_0046.jpg"
+      ]
     },
     {
       "slug": "osaka",
       "name": "Osaka",
       "region": "Japan",
-      "photos": ["2d86602b-440f-455d-9b5a-58fbb37e9474/DSC_0471.jpg","02609239-979f-4b6e-b54b-64a4667a2214/DSC_0491.jpg"]
+      "photos": [
+        "2d86602b-440f-455d-9b5a-58fbb37e9474/DSC_0471.jpg",
+        "02609239-979f-4b6e-b54b-64a4667a2214/DSC_0491.jpg"
+      ]
     }
   ]
 }
