@@ -1,0 +1,32 @@
+name: Copy photos into repo
+
+# Run once from the Actions tab. Downloads every photo from the Squarespace CDN into images/,
+# commits them, and redeploys so the site no longer depends on Squarespace.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/fetch-photos.mjs
+      - name: Commit photos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images data/photos.json
+          git diff --cached --quiet && { echo "Nothing new to commit"; exit 0; }
+          git commit -m "Copy photos into repo and serve them locally"
+          git push
+      - name: Redeploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
