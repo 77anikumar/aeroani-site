@@ -124,7 +124,9 @@ a { color: inherit; }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(10,11,13,.92) 0%, rgba(10,11,13,.25) 45%, rgba(10,11,13,0) 70%);
+  background:
+    linear-gradient(to right, rgba(10,11,13,.70) 0%, rgba(10,11,13,.35) 40%, rgba(10,11,13,0) 65%),
+    linear-gradient(to top, rgba(10,11,13,.92) 0%, rgba(10,11,13,.25) 45%, rgba(10,11,13,0) 70%);
 }
 .hero-text {
   position: relative;
