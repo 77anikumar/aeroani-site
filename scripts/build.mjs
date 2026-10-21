@@ -9,7 +9,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = join(ROOT, "_site");
-const SITE_URL = "https://aeroani.com/";
+const SITE_URL = "https://www.aeroani.com/";
 rmSync(OUT, { recursive: true, force: true });
 
 const data = JSON.parse(readFileSync(join(ROOT, "data/photos.json"), "utf8"));
@@ -134,7 +134,11 @@ for (const [src, out, root, current] of PAGES) {
   const total = locations.reduce((s, l) => s + l.photos.length, 0);
   const content = `    <section class="wrap page-head">
       <h1 class="page-title">Photography</h1>
-      <p class="page-sub">${total} photographs from ${locations.length} places — airliners, airshows, and general aviation, shot from the fence line.</p>
+      <p class="page-sub">I have been doing aviation photography for a few years now. I mainly planespot around the Bay Area airports, but occasionally take pictures on my trips to other states and countries. Follow my Instagram for my latest edits.</p>
+      <div class="btn-row" style="margin-top:24px">
+        <a class="btn primary" href="https://www.instagram.com/aero.ani/" target="_blank" rel="noopener">Follow on Instagram</a>
+      </div>
+      <p class="page-sub" style="font-size:15px">${total} photos · ${locations.length} locations</p>
     </section>
     <section class="wrap" style="padding-bottom: clamp(56px, 9vw, 112px)">
     ${locationCards(root)}
