@@ -40,6 +40,7 @@ const alt = (loc, n) => `${loc.name} aviation photograph ${n + 1} by Ani Kumar`;
 // ---------- shared pieces ----------
 const NAV = [
   ["Photography", "photography/"],
+  ["Videos", "videos/"],
   ["Engineering", "engineering/"],
   ["About", "about/"],
   ["Contact", "contact/"],
@@ -106,6 +107,7 @@ function featuredGrid(root) {
 const PAGES = [
   ["home.html", "index.html", "", ""],
   ["about.html", "about/index.html", "../", "about/"],
+  ["videos.html", "videos/index.html", "../", "videos/"],
   ["engineering.html", "engineering/index.html", "../", "engineering/"],
   ["contact.html", "contact/index.html", "../", "contact/"],
 ];
@@ -134,9 +136,10 @@ for (const [src, out, root, current] of PAGES) {
   const total = locations.reduce((s, l) => s + l.photos.length, 0);
   const content = `    <section class="wrap page-head">
       <h1 class="page-title">Photography</h1>
-      <p class="page-sub">I have been doing aviation photography for a few years now. I mainly planespot around the Bay Area airports, but occasionally take pictures on my trips to other states and countries. Follow my Instagram for my latest edits.</p>
+      <p class="page-sub">I have been doing aviation photography for a few years now. I mainly planespot around the Bay Area airports, but occasionally take pictures on my trips to other states and countries. Follow my Instagram for my latest edits, and check out my FlightAware page for a more extensive gallery!</p>
       <div class="btn-row" style="margin-top:24px">
         <a class="btn primary" href="https://www.instagram.com/aero.ani/" target="_blank" rel="noopener">Follow on Instagram</a>
+        <a class="btn ghost" href="https://www.flightaware.com/photos/user/AeroAni" target="_blank" rel="noopener">More on FlightAware</a>
       </div>
       <p class="page-sub" style="font-size:15px">${total} photos · ${locations.length} locations</p>
     </section>
