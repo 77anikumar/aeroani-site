@@ -17,6 +17,22 @@
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
+  // YouTube: show a thumbnail and only load the player (privacy-enhanced mode) when clicked
+  document.querySelectorAll(".yt[data-yt]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const iframe = document.createElement("iframe");
+      iframe.src = `https://www.youtube-nocookie.com/embed/${btn.dataset.yt}?autoplay=1&rel=0`;
+      iframe.title = btn.getAttribute("aria-label")?.replace(/^Play: /, "") || "YouTube video";
+      iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      iframe.allowFullscreen = true;
+      const frame = document.createElement("div");
+      frame.className = "yt";
+      frame.appendChild(iframe);
+      btn.replaceWith(frame);
+      iframe.focus();
+    }, { once: true });
+  });
+
   // Lightbox
   const items = Array.from(document.querySelectorAll(".gallery [data-full]"));
   if (!items.length) return;
